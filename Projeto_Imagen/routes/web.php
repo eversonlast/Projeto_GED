@@ -12,22 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.tela');
 });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/signin', function(){
-    return view('site.login');
-})->name('site.login');
+// Route::get('/signin', function(){
+//     return view('site.login');
+// })->name('site.login');
 
 
-Route::get('/login', function(){
-    return view('site.login2');
-});
+// Route::get('/login', function(){
+//     return view('site.login2');
+// });

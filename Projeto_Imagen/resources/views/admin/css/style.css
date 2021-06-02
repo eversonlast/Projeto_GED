@@ -1,0 +1,39 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.app{
+    display: grid;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    /* grid-template-columns: 150px 1fr; */
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "side"
+        "conteudo"
+    ;
+
+}
+
+
+.header{
+    grid-area: cabecalho;
+}
+
+.menu{
+    
+    background-color: blueviolet;       
+    grid-area: side;
+    height: 100%;
+  
+}
+
+.content{
+ 
+    background-color: yellow;
+    grid-area: conteudo;
+   
+}
