@@ -8,18 +8,9 @@
     <title>Sistema GED</title>
 </head>
 <body class="app">
-    {{-- <div > --}}
-        {{-- <div class="header">
-            
-        </div> --}}
-        
-            @yield("principal") 
-      
-        
-        {{-- <div class="menu">Menu</div> --}}
-
+          
+        @yield("principal")
         @yield('side')
         <div class="content">Conteúdo</div>
-    {{-- </div> --}}
 </body>
 </html>
