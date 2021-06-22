@@ -9,7 +9,7 @@ body, html{
     margin-right: 0;
     margin-top: 0;
     /* grid-template-columns: 150px 1fr; */
-    grid-template-rows: 100px 50px 1fr;
+    grid-template-rows: 100px 35px 1fr;
     grid-template-areas: 
         "cabecalho"
         "side"
@@ -21,11 +21,24 @@ body, html{
 
 .header{
     grid-area: cabecalho;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header > img {
+    width: 60px;
 }
 
+.header > span{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .menu{
     
-    background-color: blueviolet;       
+    /* background-color: blueviolet;        */
     grid-area: side;
     height: 100%;
   
@@ -33,7 +46,13 @@ body, html{
 
 .content{
  
-    background-color: yellow;
+    background-color: rgb(240, 240, 238);
     grid-area: conteudo;
    
+}
+
+.container{
+    background-color: #fff;
+    -webkit-box-shadow: 6px 7px 27px -5px rgba(0,0,0,0.84); 
+    box-shadow: 6px 7px 27px -5px rgba(0,0,0,0.84);
 }

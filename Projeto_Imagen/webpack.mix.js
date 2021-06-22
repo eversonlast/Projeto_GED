@@ -12,7 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.styles([
-   'resources/views/admin/css/style.css'
+   'resources/views/admin/css/style.css',
+   'resources/views/admin/css/styleMenu.css'
 ], 'public/admin/css/style.css')
    .scripts([
       'resources/views/admin/js/script.js'

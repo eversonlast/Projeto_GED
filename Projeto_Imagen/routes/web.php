@@ -12,9 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.tela');
-});
+    return view('site.home');
+})->name('site.home');
 
+Route::get('/form', function(){
+    return view('site.formImagen');
+})->name('site.form');
+
+Route::get('/listagem', function(){
+    return view('site.listagem');
+})->name('site.listagem');
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
